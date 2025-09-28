@@ -25,7 +25,7 @@ function example() {
 }
 
 example();       // 10
-// console.log(x);       // Throws ReferenceError: x is not defined
+console.log(x);       // Throws ReferenceError: x is not defined
 
 // Re definition using var
 var x = 10;
@@ -123,4 +123,5 @@ person.name = 'Love';
 console.log(person.name);    // Output: Love
 
 // Attempting to reassign the variable will throw an error
+
 // person = {};    // Throws TypeError: Assignment to constant variable.
