@@ -32,7 +32,7 @@ var x = 10;
 console.log(x);    // Output : 10
 
 var x = "Shreyash";   // we can re define  variable (this gives issue in debging)
-console.log(x);    // Output : Shreyash
+console.log(x);    // Output : VISHAL
 
 // var is not block scope Example:
 
@@ -125,3 +125,4 @@ console.log(person.name);    // Output: Love
 // Attempting to reassign the variable will throw an error
 
 // person = {};    // Throws TypeError: Assignment to constant variable.
+
