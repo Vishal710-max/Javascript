@@ -7,11 +7,12 @@
 // Types of naming conventions
 // There are numerous variable naming conventions in the coding world, but among the most important are :
 
+ /*
  a) Camel Case
  b) Pascal Case
  c) Snake Case
  d) Kebab Case
-
+*/
 
 // a) Camel Case
 // In camel case, the first letter of each word in a phrase is capitalized except for the first word, which starts with lowercase. 
@@ -41,4 +42,5 @@
 // Example:
 
 // phone-number,  data-found
+
 
