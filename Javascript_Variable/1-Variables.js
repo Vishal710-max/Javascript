@@ -112,7 +112,7 @@ var y;      // No Error
 
 // Example 
 const person = {
-    name: 'Mayank',
+    name: 'Virat',
     age: 21
 };
 
@@ -125,4 +125,5 @@ console.log(person.name);    // Output: Love
 // Attempting to reassign the variable will throw an error
 
 // person = {};    // Throws TypeError: Assignment to constant variable.
+
 
