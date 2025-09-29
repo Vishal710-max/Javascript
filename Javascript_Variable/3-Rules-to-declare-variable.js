@@ -1,6 +1,6 @@
 
 // 1) Naming Rules
-// Must start with: a-z, A-Z, _, or $
+// Must start with:[ a-z, A-Z, _, or $ ]
 // Can contain: a-z, A-Z, 0-9, _, $
 // Cannot be a reserved keyword (e.g., let, if, function)
 // Case-sensitive (myVar ≠ myvar)
@@ -70,5 +70,6 @@ let y = 2;      // ❌ SyntaxError
 // Initialize variables when declaring them.
 
 // Prefer let/const over var.
+
 
 
