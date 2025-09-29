@@ -7,8 +7,8 @@
 // Types of naming conventions
 // There are numerous variable naming conventions in the coding world, but among the most important are :
 
-// a) Camel Case
-// b) Pascal Case
+ a) Camel Case
+ b) Pascal Case
 // c) Snake Case
 // d) Kebab Case
 
@@ -39,4 +39,5 @@
 // The only difference between snake case and kebab case naming convention is, In kebab case the words in a phrase are separated by hyphens("-").
 
 // Example:
+
 // phone-number,  data-found
