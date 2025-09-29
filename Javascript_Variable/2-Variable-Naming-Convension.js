@@ -9,8 +9,8 @@
 
  a) Camel Case
  b) Pascal Case
-// c) Snake Case
-// d) Kebab Case
+ c) Snake Case
+ d) Kebab Case
 
 
 // a) Camel Case
@@ -41,3 +41,4 @@
 // Example:
 
 // phone-number,  data-found
+
