@@ -29,8 +29,8 @@ const PI = 3.14;          // ✅ Constant (must be initialized)
 
 // Example:
 if (true) {  
-  var x = 1;    // Exists outside block  
-  let y = 2;    // Only exists inside block  
+  var x = 10;    // Exists outside block  
+  let y = 20;    // Only exists inside block  
 }  
 console.log(x); // 1  
 console.log(y); // ReferenceError  
@@ -68,4 +68,5 @@ let y = 1;
 // Always use const unless rebinding is needed.
 // Never use undeclared variables (prevents globals).
 // Initialize variables when declaring them.
+
 // Prefer let/const over var.
