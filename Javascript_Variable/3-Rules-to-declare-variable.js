@@ -32,7 +32,7 @@ if (true) {
   var x = 10;    // Exists outside block  
   let y = 20;    // Only exists inside block  
 }  
-console.log(x); // 1  
+console.log(x); // 10  
 console.log(y); // ReferenceError  
 
 
@@ -70,3 +70,4 @@ let y = 1;
 // Initialize variables when declaring them.
 
 // Prefer let/const over var.
+
