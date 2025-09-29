@@ -18,7 +18,7 @@
 
 // Examples:
 var oldWay = "avoid";     // ❌ Legacy (function-scoped, hoisted)  
-let count = 0;            // ✅ Reassignable  
+let count = 1;            // ✅ Reassignable  
 const PI = 3.14;          // ✅ Constant (must be initialized)  
 
 
@@ -70,5 +70,6 @@ let y = 1;
 // Initialize variables when declaring them.
 
 // Prefer let/const over var.
+
 
 
