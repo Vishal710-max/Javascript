@@ -47,7 +47,7 @@ a = 10;
 
 // const b;        // ❌ SyntaxError (missing initializer)  
 const c = 5;    
-c = 10;         // ❌ TypeError (reassignment)  
+//c = 10;         // ❌ TypeError (reassignment)  
 
 
 
@@ -70,4 +70,5 @@ let y = 1;
 // Initialize variables when declaring them.
 
 // Prefer let/const over var.
+
 
