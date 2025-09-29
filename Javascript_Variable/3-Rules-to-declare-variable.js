@@ -60,7 +60,7 @@ var x = 1;
 var x = 2;      // ✅ Allowed (but confusing)  
 
 let y = 1;  
-// let y = 2;      // ❌ SyntaxError  
+let y = 2;      // ❌ SyntaxError  
 
 
 
@@ -70,6 +70,5 @@ let y = 1;
 // Initialize variables when declaring them.
 
 // Prefer let/const over var.
-
 
 
