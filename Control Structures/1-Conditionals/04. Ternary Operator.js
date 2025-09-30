@@ -8,7 +8,8 @@
 
 
 // Example:
-let age = 25;
+let age = 17;
 let message = age >= 18 ? "Adult" : "Minor";
 
 console.log(message); // "Adult"
+
