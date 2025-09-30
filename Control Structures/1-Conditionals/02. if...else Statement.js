@@ -12,12 +12,13 @@
 
 
 // Example:
-let myAge = 15;
+let myAge = 17;
 
 if(myAge >= 18){
     console.log("I can Drive");
 }else{
     console.log("Cannot Drive");
 }
+
 
 // Output : "Cannot Drive"
