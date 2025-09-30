@@ -12,18 +12,19 @@
 //   }
 
 
-let speed = 45;
+let speed = 35;
 
-if(speed > 90){
+if(speed > 80){
     console.log("OverSpeeding");
 }
 
-if(speed > 50 && speed <=90){
+if(speed > 40 && speed <=80){
     console.log("Normal");
 }
 
 if(speed <= 50){
     console.log("Slow");
 }
+
 
 // Output: "Slow"
