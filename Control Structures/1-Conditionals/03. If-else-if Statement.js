@@ -15,7 +15,7 @@
 
 
 // Example:
-let weight = 65;
+let weight = 55;
 
 if (weight > 70) {
     console.log("You are Overweight");
@@ -24,5 +24,6 @@ if (weight > 70) {
 } else {
     console.log("You are Underweight");
 }
+
 
 // Output : "You are Fit"
