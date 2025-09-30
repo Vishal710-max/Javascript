@@ -18,7 +18,7 @@
 
 
 // Example:
-let day = "Monday";
+let day = "Friday";
 
 switch (day) {
     case "Monday":
@@ -32,4 +32,5 @@ switch (day) {
 }
 
 // Output:
+
 // Start of the week
