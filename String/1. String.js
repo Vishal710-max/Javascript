@@ -41,11 +41,12 @@ console.log(multi);
 
 console.log(name);      // Vishal
 console.log(message);   // Welcome to JavaScript
-console.log(greeting);  // Hello, Shreyash!
+console.log(greeting);  // Hello, Vishal!
 
 console.log(typeof(name));     // string
 console.log(typeof(message));  // string
 console.log(typeof(greeting)); // string
+
 
 
 
