@@ -37,15 +37,16 @@ console.log(multi);
 // Output:
 // Hello
 //  my name
-//  is Shreyash
+//  is Vishal
 
-console.log(name);      // Shreyash
+console.log(name);      // Vishal
 console.log(message);   // Welcome to JavaScript
 console.log(greeting);  // Hello, Shreyash!
 
 console.log(typeof(name));     // string
 console.log(typeof(message));  // string
 console.log(typeof(greeting)); // string
+
 
 
 
