@@ -23,9 +23,9 @@ let str3 = `Hello World`;
 let name = "Vishal";
 let message = 'Welcome to JavaScript';
 let greeting = `Hello, ${name}!`; // Template literal (supports interpolation)
-let usingstring = String("Shreyash Patil");
+let usingstring = String("Vishal Bhingarde");
 
-console.log(usingstring);    // Shreyash Patil
+console.log(usingstring);    // Vishal Bhingarde
 
 // Multiline String:
 // using follwing string we can create it "" and '' gives error to genrate multi line string
@@ -46,6 +46,7 @@ console.log(greeting);  // Hello, Shreyash!
 console.log(typeof(name));     // string
 console.log(typeof(message));  // string
 console.log(typeof(greeting)); // string
+
 
 
 
