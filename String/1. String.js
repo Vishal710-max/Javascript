@@ -20,7 +20,7 @@ let str3 = `Hello World`;
 
 
 // Example:
-let name = "Shreyash";
+let name = "Vishal";
 let message = 'Welcome to JavaScript';
 let greeting = `Hello, ${name}!`; // Template literal (supports interpolation)
 let usingstring = String("Shreyash Patil");
@@ -46,5 +46,6 @@ console.log(greeting);  // Hello, Shreyash!
 console.log(typeof(name));     // string
 console.log(typeof(message));  // string
 console.log(typeof(greeting)); // string
+
 
 
