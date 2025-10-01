@@ -31,7 +31,7 @@ console.log(usingstring);    // Vishal Bhingarde
 // using follwing string we can create it "" and '' gives error to genrate multi line string
 let multi = `Hello     
  my name
- is Shreyash`;
+ is Vishal`;
 
 console.log(multi);
 // Output:
@@ -46,6 +46,7 @@ console.log(greeting);  // Hello, Shreyash!
 console.log(typeof(name));     // string
 console.log(typeof(message));  // string
 console.log(typeof(greeting)); // string
+
 
 
 
