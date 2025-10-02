@@ -9,7 +9,8 @@
 
 let text = "My name is Shreyash";
 console.log(text.split(" "));    // [ 'My', 'name', 'is', 'Vishal' ]
-console.log(text.split());       // [ 'My name is Shreyash' ]
+console.log(text.split());       // [ 'My name is Vishal' ]
 console.log(text.split(" ", 2)); // [ 'My', 'name' ]
+
 
 
