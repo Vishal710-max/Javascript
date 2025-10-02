@@ -10,7 +10,8 @@
 // let lowerCaseString = string.toLowerCase();
 
 
-let str = "Shreyash Patil";
+let str = "Vishal Bhingarde";
 
 console.log(`Upper Case ${str.toUpperCase()}`);    // Upper Case SHREYASH PATIL
+
 console.log(`Lower case ${str.toLowerCase()}`);    // Lower case shreyash patil
