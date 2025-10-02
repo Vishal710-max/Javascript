@@ -12,6 +12,7 @@
 
 let str = "Vishal Bhingarde";
 
-console.log(`Upper Case ${str.toUpperCase()}`);    // Upper Case SHREYASH PATIL
+console.log(`Upper Case ${str.toUpperCase()}`);    // Upper Case Vishal Bhingarde
 
 console.log(`Lower case ${str.toLowerCase()}`);    // Lower case shreyash patil
+
