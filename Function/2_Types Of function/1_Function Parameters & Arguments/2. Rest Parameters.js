@@ -18,7 +18,7 @@ function sum(...numbers) {
      return numbers.reduce((num1, num2) => num1 + num2, 0);
 }
 
-console.log(sum(1, 2, 3)); // 6
+console.log(sum(11,22,33)); // 66
 console.log(sum(5, 10, 15, 20)); // 50
 
 
@@ -35,3 +35,4 @@ console.log(greet('Hello', 'Alice', 'Bob', 'Charlie'));
 function logItems(prefix, ...items) {
   items.forEach(item => console.log(`${prefix}: ${item}`));
 }
+
