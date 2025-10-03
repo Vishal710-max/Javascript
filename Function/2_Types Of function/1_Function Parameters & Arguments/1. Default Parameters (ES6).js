@@ -35,7 +35,7 @@ function  say(fname = "Uday", lname = fname.toUpperCase()) {
     console.log(fname + "  " + lname);
 }
 
-say("Shreaysh", "Patil");   // Shreaysh  Patil
+say("Shreaysh", "Bhingarde");   // Vishal  Bhingarde
 say("Vishal");    // Vishal  Vishal
 say();     // Uday  UDAY
 
@@ -81,4 +81,5 @@ utility();   // undefined   undefined
 
 // After setting default values
 utility();     // Rohit   20
+
 
