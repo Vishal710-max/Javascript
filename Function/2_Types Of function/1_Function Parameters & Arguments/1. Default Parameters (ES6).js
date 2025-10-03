@@ -15,7 +15,7 @@ function greet(name = "Guest") {
     return `Hello ${name}`;
 }
 
-console.log(greet("Shreyash"));   // Hello Shreyash
+console.log(greet("Vishal"));   // Hello Vishal
 console.log(greet());    // Hello Guest
 
 
@@ -36,7 +36,7 @@ function  say(fname = "Uday", lname = fname.toUpperCase()) {
 }
 
 say("Shreaysh", "Patil");   // Shreaysh  Patil
-say("shreyash");    // shreyash  SHREYASH
+say("Vishal");    // Vishal  Vishal
 say();     // Uday  UDAY
 
 
@@ -49,17 +49,17 @@ function solve(value = {age:19, wt:70, ht:190}) {
 }
 
 solve();    // Hello  { age: 19, wt: 70, ht: 190 }
-solve("Shreyash");   // Hello  Shreyash
+solve("Vishal");   // Hello  Vishal
 
 
 // Example 5:
 // Passing null and undefined 
 
-function solve1 (value = "Shreyash") {
+function solve1 (value = "Vishal") {
     console.log("Hello -> ", value);
 }
 solve1(null);    // Hello ->  null
-solve1(undefined);   // Hello ->  Shreyash
+solve1(undefined);   // Hello ->  Vishal
 
 
 // Example 6:
@@ -73,11 +73,12 @@ function utility(name = "Rohit", age = getAge()) {
     console.log(name, " ", age);
 }
 
-utility("Shreyash", 30);    // Shreyash   30
+utility("Vishal", 30);    // Vishal   30
 
 // Before setting default values
-utility("Shreyash");    // Shreyash   undefined
+utility("Vishal");    // Vishal   undefined
 utility();   // undefined   undefined
 
 // After setting default values
 utility();     // Rohit   20
+
