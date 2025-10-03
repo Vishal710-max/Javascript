@@ -19,7 +19,7 @@ function sum(...numbers) {
 }
 
 console.log(sum(11,22,33)); // 66
-console.log(sum(5, 10, 15, 20)); // 50
+console.log(sum(50, 10, 150, 20)); // 230
 
 
 
@@ -35,4 +35,5 @@ console.log(greet('Hello', 'Alice', 'Bob', 'Charlie'));
 function logItems(prefix, ...items) {
   items.forEach(item => console.log(`${prefix}: ${item}`));
 }
+
 
