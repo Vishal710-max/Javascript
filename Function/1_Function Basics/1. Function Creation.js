@@ -31,7 +31,7 @@
 function greet(name) {
     return `Hello, ${name}!`;
 }
-console.log(greet("Shreyash")); // Output: Hello, Shreyash!
+console.log(greet("Vishal")); // Output: Hello, Vishal!
 
 
 // Function Expression:
@@ -43,4 +43,5 @@ const greet = function(name) {
     return `Hello, ${name}!`;
 };
 console.log(greet("Shreyash")); // Output: Hello, Shreyash!
+
 
