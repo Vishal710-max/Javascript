@@ -42,6 +42,7 @@ console.log(greet("Vishal")); // Output: Hello, Vishal!
 const greet = function(name) {
     return `Hello, ${name}!`;
 };
-console.log(greet("Shreyash")); // Output: Hello, Shreyash!
+console.log(greet("Vishal")); // Output: Hello, Vishal!
+
 
 
