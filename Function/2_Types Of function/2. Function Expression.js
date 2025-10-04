@@ -18,4 +18,5 @@
 const data = function(a, b, c) {
     return a + b + c;
 }
-console.log(data(10, 20, 30))    // 60
+
+console.log(data(100, 200, 300))    // 60
