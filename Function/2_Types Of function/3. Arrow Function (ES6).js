@@ -20,10 +20,11 @@
 const  myFunction = (name) => {
       return `Hello, ${name}`;
 }
-console.log(myFunction("Shreyash"));     // Hello, Shreyash
+console.log(myFunction("Vishal"));     // Hello, Vishal
 
 
 // Example 2:
 
 const  square = (num) => num ** 2;
-console.log(square(2))   // 4
+
+console.log(square(3))   // 9
