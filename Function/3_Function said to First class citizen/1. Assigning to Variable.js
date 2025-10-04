@@ -1,7 +1,8 @@
 
 
 let  greet = function() {
-    console.log("Hello");
+    console.log("Hello World");
 }
+
 
 greet();    // Hello
