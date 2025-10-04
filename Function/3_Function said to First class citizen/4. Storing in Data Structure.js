@@ -19,7 +19,7 @@ console.log(`Subtraction: ${second(20, 10)}`);   // Subtraction: 10
 
 let obj = {
     greet : function() {
-        console.log("Hello, Shreyash..");
+        console.log("Hello, Vishal..");
     },
     show() {
         console.log("Hello to All");
@@ -29,6 +29,7 @@ let obj = {
     }
 }
 
-obj.greet();   // Hello, Shreyash..
+obj.greet();   // Hello, Vishal..
 obj.show();    // Hello to All
+
 obj.display(); // HELLO developers
