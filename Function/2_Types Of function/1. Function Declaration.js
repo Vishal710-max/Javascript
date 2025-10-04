@@ -14,9 +14,10 @@
 
 // Example:
 
-function  avgOfTwoNumber(num1, num2) {
+function  average(num1, num2) {
       let avg = (num1 + num2) / 2;
       console.log("Average: " + avg);
 }
 
-avgOfTwoNumber(3, 7);   // Average: 5
+
+average(3, 7);   // Average: 5
