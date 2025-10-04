@@ -74,9 +74,10 @@ console.log(counter.getCount());  // 3
 
 // Example 4: Passing Arguments to IIFE
 
-const userName = "Shreyash";
+const userName = "Vishal";
 
 (function(name) {
   console.log(`Hello, ${name}!`);
 })(userName);
-// Output: "Hello, Shreyash!"
+
+// Output: "Hello, Vishal!"
