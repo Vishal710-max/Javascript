@@ -25,7 +25,7 @@ let obj = {
         console.log("Hello to Everyone");
     },
     display : () => {
-        console.log("HELLO developers");
+        console.log("HELLO All developers");
     }
 }
 
@@ -33,4 +33,5 @@ obj.greet();   // Hello, Vishal..
 obj.show();    // Hello to All
 
 obj.display(); // HELLO developers
+
 
