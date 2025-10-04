@@ -6,5 +6,6 @@ function solve(number1) {
      }
 }
 
-let double = solve(2);
-console.log(double(10));    //  20
+let double = solve(4);
+
+console.log(double(10));    //  40
