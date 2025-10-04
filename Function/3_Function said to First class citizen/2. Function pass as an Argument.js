@@ -9,8 +9,9 @@ function greet() {
     console.log("Greeting for the day");
 }
 
-greetMe(greet, "Shreyash");
+greetMe(greet, "Vishal");
 
 // Output:
-// Hello, Shreyash
+// Hello, Vishal
+
 // Greeting for the day
