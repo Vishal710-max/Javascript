@@ -42,8 +42,8 @@ console.log(fruits);   // ["Apple", "Banana"]
 // Mutates the original array.
 
 // Example:
-fruits.unshift("Mango");
-console.log(fruits); // ["Mango", "Apple", "Banana"]
+fruits.unshift("Orange");
+console.log(fruits); // ["Orange", "Apple", "Banana"]
 
 
 
@@ -82,4 +82,5 @@ console.log(numbers);    // [ 1, 10, 5 ]
 
 
 numbers.splice(1, 0, 99); // Adds 99 at index 1
+
 console.log(numbers); // [1, 99, 10, 5]
