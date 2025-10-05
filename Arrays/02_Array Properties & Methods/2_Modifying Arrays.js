@@ -72,11 +72,11 @@ console.log(fruits); // ["Apple", "Banana"]
 // item1, ..., itemN	 Elements to add (optional)
 
 const numbers = [1, 2, 3, 4, 5];
-numbers.splice(2, 1); // Removes 1 element at index 2
+numbers.splice(2, 1); // Removes  element at index 2
 
 console.log(numbers); // [1, 2, 4, 5]
 
-numbers.splice(1, 2, 10);   // i.e 1 index se two values remove karo and insert karo 10
+numbers.splice(1, 2, 10);   // i.e 1 index  
 
 console.log(numbers);    // [ 1, 10, 5 ]
 
@@ -84,3 +84,4 @@ console.log(numbers);    // [ 1, 10, 5 ]
 numbers.splice(1, 0, 99); // Adds 99 at index 1
 
 console.log(numbers); // [1, 99, 10, 5]
+
