@@ -9,7 +9,7 @@
 // Creating Arrays
 
 // A) Using Array Literal (Most Common)
-const fruits = ["Apple", "Banana", "Orange"];
+const fruits = ["Apple", "Mango", "Orange"];
 
 
 // B) Using new Array() Constructor
@@ -19,6 +19,7 @@ const numbers = new Array(11, 22, 33);
 const emptyArray = [];
 // or
 const anotherEmptyArray = new Array();
+
 
 
 
