@@ -5,6 +5,3 @@
 
 const cars = ["BMW", "Audi", "Tesla"];
 console.log(cars.length); // 3
-
-
-// B) Modifying Arrays
