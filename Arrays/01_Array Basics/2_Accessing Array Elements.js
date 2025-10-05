@@ -7,9 +7,10 @@
 
 // Example:
 const colors = ["Orange","Red","Blue"];
-console.log(colors[0]); // "Red"
+console.log(colors[0]); // "Orange"
 console.log(colors[2]); // "Blue"
 console.log(colors[5]); // undefined (no index 5)
+
 
 
 
