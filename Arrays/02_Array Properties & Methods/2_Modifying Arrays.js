@@ -76,12 +76,13 @@ numbers.splice(2, 1); // Removes  element at index 2
 
 console.log(numbers); // [1, 2, 4, 5]
 
-numbers.splice(1, 2, 10);   // i.e 1 index  
+numbers.splice(1, 2, 10);   // i.e At 1st index Remove the Element 2 and Insert 10  
 
 console.log(numbers);    // [ 1, 10, 5 ]
 
 
-numbers.splice(1, 0, 99); // Adds 99 at index 1
+numbers.splice(1, 0, 90); // Adds 90 at index 1
 
 console.log(numbers); // [1, 99, 10, 5]
+
 
