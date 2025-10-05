@@ -3,5 +3,6 @@
 // length Property
 // Returns the number of elements in the array.
 
-const cars = ["BMW", "Audi", "Tesla"];
-console.log(cars.length); // 3
+const cars = [12,34,56,78,90];
+
+console.log(cars.length); // 5
