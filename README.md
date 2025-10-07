@@ -73,3 +73,32 @@ cd javascript-basics
 2:Open in VS Code or any IDE
 
   Explore each folder and run .js files directly in your browser console or Node.js.
+
+
+🎯 Goals
+
+  Build a strong foundation in JavaScript.
+  
+  Prepare for front-end frameworks like React, Vue, or Angular.
+  
+  Understand how modern JavaScript works behind the scenes.
+
+🧑‍💻 Author
+
+Vishal Bhingarde
+📍 Student | Developer | Tech Enthusiast
+📧 [bhingardevishal5@gmail.com
+]
+🌐 GitHub Profile
+
+⭐ Contribute & Support
+
+If you find this repository helpful:
+
+Give it a ⭐ on GitHub
+
+Fork it and add your own examples
+
+Share it with other learners
+
+“Code is like humor. When you have to explain it, it’s bad.” — Cory House
