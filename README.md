@@ -60,6 +60,16 @@ Here’s a quick overview of what you’ll find inside:
 ## 💻 How to Use
 
 1. **Clone the repository**
-   ```bash
+2. 
    git clone https://github.com/<your-username>/javascript-basics.git
- 
+
+
+
+1:Navigate to the project
+
+cd javascript-basics
+
+
+2:Open in VS Code or any IDE
+
+  Explore each folder and run .js files directly in your browser console or Node.js.
