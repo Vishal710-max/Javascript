@@ -19,12 +19,12 @@ function sayMyName(finalName) {     // This function declaration will be shift i
 }
 // Current scope ke ander shift on top of the scope call as function Hosting
 
-sayMyName("Shreyash");
+sayMyName("Rohit");
 
 
 // It works:
 // Vishal
-// Shreyash
+// Rohit
 
 }
 
@@ -53,3 +53,4 @@ let a = 25;
 
 
 console.log(a);    // works
+
