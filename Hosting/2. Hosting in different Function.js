@@ -5,7 +5,7 @@
 
 // lets see in Expression Function:
 
-// sayMyName("Shreyash")    // Not works we get an error  annot access 'sayMyName' before initialization
+// sayMyName("Vishal")    // Not works we get an error  annot access 'sayMyName' before initialization
 
 let sayMyName = function(name) {
     console.log(name);
@@ -17,7 +17,7 @@ sayMyName("Rohit");    // Rohit  (works)
 
 // Now see in arrow function
 
-// say("Shreaysh");   // we get an error like above
+// say("Vishal");   // we get an error like above
 
 let say = (name) => {
     console.log(name);
@@ -36,5 +36,6 @@ sayMe("Rohit");   // Rohit works
 function sayMe(name) {
     console.log(name);
 }
+
 
 sayMe("Shreyash");   // Shreaysh works
