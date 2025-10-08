@@ -11,7 +11,7 @@
 
 // Function scoping:
 
-sayMyName("Rohit");   // If i put function call before defination of function it can able to call i.e. Here is an concept of Hosting
+sayMyName("Vishal");   // If i put function call before defination of function it can able to call i.e. Here is an concept of Hosting
 
 
 function sayMyName(finalName) {     // This function declaration will be shift in current scope of top scope
@@ -23,7 +23,7 @@ sayMyName("Shreyash");
 
 
 // It works:
-// Rohit
+// Vishal
 // Shreyash
 
 }
@@ -50,5 +50,6 @@ console.log(age);    // 25
 // console.log(a);    // we get an error  Cannot access 'a' before initialization like that
 
 let a = 25;
+
 
 console.log(a);    // works
