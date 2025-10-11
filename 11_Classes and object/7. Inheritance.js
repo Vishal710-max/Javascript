@@ -4,7 +4,7 @@
 // In JavaScript, inheritance is implemented using the extends keyword and the super() function.
 
 
-// Syntax
+// Syntax :
 
 //    class ParentClass {
 //       // Parent class properties and methods
@@ -80,10 +80,11 @@ console.log(Dog.describe()); // "Animals are living beings." (inherited)
 
 
 
-// Summary
+// Summary :
 // extends → Creates inheritance.
 // super() → Calls parent constructor.
 // super.method() → Calls parent method.
 // Method overriding → Redefine a parent method.
 // Static methods are also inherited.
+
 // instanceof checks inheritance hierarchy.
