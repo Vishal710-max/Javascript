@@ -82,5 +82,6 @@ function Book(title, author) {
   };
 }
 
-const book1 = new Book('1984', 'George Orwell');
-console.log(book1.getInfo()); // "1984 by George Orwell"
+const book1 = new Book('1994', 'George Orwell');
+
+console.log(book1.getInfo()); // "1994 by George Orwell"
