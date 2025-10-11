@@ -47,9 +47,10 @@ class User {
   }
 }
 
-const user1 = new User("Shreyash");
-user1.greet(); // "Hello, Shreyash!" (instance method)
+const user1 = new User("Vishal");
+user1.greet(); // "Hello, Vishal!" (instance method)
 
 const guest = User.createGuest(); // Static method call
 
 guest.greet(); // "Hello, Guest!" (created via static method)
+
