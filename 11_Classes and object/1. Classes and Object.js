@@ -48,8 +48,8 @@ class Person {
   }
 }
 
-const person1 = new Person('Vishal', 20);
-person1.greet(); // Output: "Hello, my name is Vishal and I'm 20 years old."
+const person1 = new Person('Vishal', 21);
+person1.greet(); // Output: "Hello, my name is Vishal and I'm 21 years old."
 
 
 // Key Features
@@ -85,5 +85,6 @@ person1.greet(); // Output: "Hello, my name is Vishal and I'm 20 years old."
 // this Binding Differences:
 //     - Methods declared without function keyword properly bind this to the instance
 //     - Using function would create its own this context
+
 
 
