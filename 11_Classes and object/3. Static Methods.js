@@ -27,7 +27,7 @@ class MathUtils {
 }
 
 // Call directly on the class
-console.log(MathUtils.square(5)); // 25 (no need for `new MathUtils()`)
+console.log(MathUtils.square(6)); // 36 (no need for `new MathUtils()`)
 
 
 // Static Method vs Instance Method
@@ -51,4 +51,5 @@ const user1 = new User("Shreyash");
 user1.greet(); // "Hello, Shreyash!" (instance method)
 
 const guest = User.createGuest(); // Static method call
+
 guest.greet(); // "Hello, Guest!" (created via static method)
