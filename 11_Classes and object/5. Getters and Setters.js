@@ -29,8 +29,8 @@ class Person {
   }
 }
 
-const person = new Person("Vishal", "Patil");
-console.log(person.fullName); // "Vishal Patil" (not a function call!)
+const person = new Person("Vishal", "Bhingarde");
+console.log(person.fullName); // "Vishal Bhingarde" (not a function call!)
 
 
 
@@ -70,3 +70,4 @@ console.log(temp.fahrenheit); // 77 (getter)
 temp.fahrenheit = 100; // Calls the setter
 
 console.log(temp._celsius); // 37.777... (modified via setter)
+
