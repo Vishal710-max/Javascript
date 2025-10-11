@@ -23,7 +23,7 @@ class  Person {
 
     diplay() {
         this.#show();
-        this.#ht = 100;
+        this.#ht = 50;
         console.log(`Your height ${this.#ht}`);
     }
 }
@@ -31,7 +31,7 @@ class  Person {
 let obj = new Person();
 obj.diplay();
 
-obj.setage = 200;
+obj.setage = 30;
 console.log(obj.getage);
 
 // console.log(obj.#ht);   // Error private data member
@@ -42,4 +42,5 @@ console.log(obj.age);
 // Your weight 90
 // Your height 100
 // 200
+
 // 200
