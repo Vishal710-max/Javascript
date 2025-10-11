@@ -15,7 +15,7 @@
 //    }
 
 
-// Example
+// Example 1:
 class Person {
   constructor(name) {
     this.name = name; // Public property
@@ -31,7 +31,7 @@ console.log(person.name); // "Alice" (public access)
 console.log(person.greet()); // "Hello, Alice!" (public method call)
 
 
-// Key Points
+// Key Points :
 // ✅ Accessible everywhere (inside/outside class).
 // ✅ Modifiable (can be changed after creation).
 
@@ -60,7 +60,7 @@ console.log(person.greet()); // "Hello, Alice!" (public method call)
 //       }
 
 
-// Example:
+// Example 2:
 
 class BankAccount {
   #balance = 0; // Private field
@@ -90,4 +90,5 @@ console.log(account.getBalance()); // 100 (via public method)
 // 🔒 Only accessible inside the class.
 // ❌ Cannot be accessed/modified externally.
 // ⚠ Must be declared at the top of the class (ES2022 rule).
+
 // 🔑 Used for encapsulation (hiding internal logic).
