@@ -22,8 +22,9 @@ console.log(Math.floor(6.2)); // 6
 console.log(Math.random()); // 0.123... (random between 0-1)
 console.log(Math.max(100, 210, 50)); // 210
 console.log(Math.min(10, 0, 200, 300, 25))    // 0
-console.log(Math.pow(2, 5)); // 32 (2⁵)
+console.log(Math.pow(2, 6)); // 64 
 
 console.log(Math.abs(-5))    // 5 
+
 
 
