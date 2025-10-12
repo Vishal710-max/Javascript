@@ -28,8 +28,8 @@ curr.setFullYear(2001);
 console.log(curr.getFullYear());    // 2001
 console.log(curr.getMonth());      // 10
 console.log(curr.getDate());       // 10
-console.log(curr.getHours());      // 22
-console.log(curr.getMinutes());    // 6
+console.log(curr.getHours());      // 20
+console.log(curr.getMinutes());    // 15
 console.log(curr.getSeconds());    // 28
 console.log(curr.getMilliseconds());  // 76
 console.log(curr.toDateString());   // Sat Jun 02 2001
@@ -37,3 +37,4 @@ console.log(curr.toTimeString());   // 22:09:07 GMT+0530 (India Standard Time)
 
 
  
+
