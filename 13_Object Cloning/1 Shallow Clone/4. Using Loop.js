@@ -32,7 +32,7 @@ console.log("Shallow object: ", Shallow);
 
 // After changing in shallow copy lets see changes
 
-Shallow.age = 100;
+Shallow.age = 90;
 
 Shallow.address.city = "Mumbai";
 
@@ -40,7 +40,7 @@ Shallow.address.city = "Mumbai";
 console.log("Shallow object: ", Shallow);
 // Shallow object:  {
 //   name: 'Alice',
-//   age: 100,
+//   age: 90,
 //   address: { city: 'Mumbai', country: 'USA' }     
 // }
 // In shallow copy age is changed and also nested dict city also changed
@@ -50,4 +50,5 @@ console.log("Original object: ", original);
 // Original object:  { name: 'Alice', age: 25, address: { city: 'Mumbai', country: 'USA' } }
 // In original copy age is not changed because it's outer reference is difference
 // but in original nested object city is changed because nested object is referencing to original one
+
 
