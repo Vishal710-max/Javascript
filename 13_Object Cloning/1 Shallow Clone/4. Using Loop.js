@@ -2,7 +2,7 @@
 
 const original = {
   name: "Alice",
-  age: 25,
+  age: 21,
   address: {
     city: "New York",
     country: "USA"
@@ -18,14 +18,14 @@ for (let key1 in original) {
 console.log("Original object: ", original);
 // Original object:  {
 //   name: 'Alice',
-//   age: 25,
+//   age: 21,
 //   address: { city: 'New York', country: 'USA' }   
 // }
 
 console.log("Shallow object: ", Shallow);
 // Shallow object:  {
 //   name: 'Alice',
-//   age: 25,
+//   age: 21,
 //   address: { city: 'New York', country: 'USA' }
 // }
 
@@ -50,3 +50,4 @@ console.log("Original object: ", original);
 // Original object:  { name: 'Alice', age: 25, address: { city: 'Mumbai', country: 'USA' } }
 // In original copy age is not changed because it's outer reference is difference
 // but in original nested object city is changed because nested object is referencing to original one
+
