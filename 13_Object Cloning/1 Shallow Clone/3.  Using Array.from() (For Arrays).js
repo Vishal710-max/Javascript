@@ -31,10 +31,11 @@ console.log("Cloned:", clonedArr);
 
 
 originalArr[0] = 10;
-originalArr[2].name = "Shreyash";
+originalArr[2].name = "Vishal";
 console.log("Original:", originalArr);
 console.log("Cloned:", clonedArr);
 
 
-// Original: [ 10, 2, { name: 'Shreyash' } ]
-// Cloned: [ 100, 2, { name: 'Shreyash' } ]
+// Original: [ 10, 2, { name: 'Vishal' } ]
+
+// Cloned: [ 100, 2, { name: 'Vishal' } ]
