@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways to add Events</title>
+</head>
+<body style="background-color: #414141; color: white;">
+    <h2>Images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="tree" src="Images/img1.jpg" alt=""></li>
+            <li><img width="200px" id="sun" src="Images/img2.jpg" alt=""></li>
+            <li><img width="200px" id="bird" src="Images/img3.jpg" alt=""></li>
+            <li><img width="200px" id="sea" src="Images/img4.jpg" alt=""></li>
+            <li><img width="200px" id="lion" src="Images/img5.jpg" alt=""></li>
+            <li><img width="200px" id="butterfly" src="Images/img6.jpg" alt=""></li>
+            
+            <li><img width="200px" id="night" src="Images/img7.jpg" alt="" ></li>  <!--onclick="alert('Nigh clicked')"-->
+            <!-- 1st way This is not better way to add event -->
+
+            <li><a style="color: white;" href="https://www.google.com" id="google">Click here</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // Js is sequentaly run language (Events run sequentalay)
+
+    // 2nd way
+    // document.getElementById("butterfly").onclick = function() {
+    //     alert("butterfly clicked");
+    // }
+    // This type of events can not provides way more information abount event
+
+
+    // attachEvent()
+    // jQuery - .on
+
+
+    // 3rd way
+    //  document.getElementById("lion").addEventListener('click', function(e) {
+    //         // e => show more information about events
+    //          console.log(e);  // this object provides the way more info about event
+    //  }, false);  
+    //  false is an default value
+
+
+    // Need to learn
+    // type, timestamp, defaultPrevented (Skip default behaviour) 
+    // target, toElement, srcElement, currentTraget
+    // clientX, clientY, screenX, screenY (Positions)
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // Event Propagation false / true
+    // There two context 1. Event bubbling and Event capturing
+
+    // false => Event bubbling
+    // true => Event capturing
+
+
+
+    // Event bubbling:
+    // document.getElementById("images").addEventListener('click', function(e) {
+    //     console.log("Clicked inside the ul");
+    // }, false)
+
+    // document.getElementById("lion").addEventListener('click', function(e) {
+    //     console.log("lion clicked");
+    // }, false)
+
+    // Output => 
+    // lion clicked
+    // Clicked inside the ul
+
+    // This is called as Event bubbling down to up i.e img to ul
+    // Event goes form down to up
+
+
+
+    // Event Capturing
+    // document.getElementById("images").addEventListener('click', function(e) {
+    //     console.log("Clicked inside the ul");
+    // }, true)
+
+    // document.getElementById("lion").addEventListener('click', function(e) {
+    //     console.log("lion clicked");
+    // }, true)
+
+    // Output =>
+    // Clicked inside the ul
+    // lion clicked
+    
+    // This is called as Event capturing top to down i.e ul to img
+    // Event goes form up to down
+
+
+
+    // If we do not want event bubbling (SomeTime we want no Event bubbling occurs) then event method stopPropagation() on event object
+
+    // document.getElementById("images").addEventListener('click', function(e) {
+    //     console.log("Clicked inside the ul");
+    // }, false)
+
+    // document.getElementById("lion").addEventListener('click', function(e) {
+    //     console.log("lion clicked");
+    //     e.stopPropagation();
+    // }, false)
+
+    // Output =>
+    // lion clicked
+   
+    // e.stopPropagation();   Method stops the event bubbling 
+
+
+
+    // Privent the default behaviour of the anchor tag
+
+    // document.getElementById("google").addEventListener('click', function(e) {
+    //     e.preventDefault();    // change default behaviour
+    //     e.stopPropagation();   // No bubbling
+    //     console.log("Clicked on link");
+    // })
+
+    // Output =>
+    // Clicked on link
+
+    // It does not go to google.com (Default behaviour of anchor changed) 
+
+
+
+    document.getElementById("images").addEventListener('click', function(e) {
+        console.log(e);  // Info of event
+        
+        console.log(e.target);  // When you click on perticular image it gives that image tag
+        
+        console.log(e.target.parentNode);   // It can give the image tag parent node i.e li
+
+        console.log(e.target.id);   // It can print the id clicked id
+        console.log(e.target.tagName);   // Proveds the tag name of clicked element (IMG) 
+
+        if (e.target.tagName === 'IMG') {
+            let removeIt = e.target.parentNode;
+
+            // 1st way to remove
+            removeIt.remove();   // selected element remove
+
+            // removeIt.parentNode.removeChild(removeIt);
+            // Access parent to child the use method removeChild() to remove an element (give parameter current child)
+        }
+
+    }, false)
+
+
+
+</script>
+</html>
