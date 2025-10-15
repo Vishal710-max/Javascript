@@ -37,7 +37,7 @@ try {
 } catch (error) {
   console.error("An error occurred:", error.message);
 } finally {
-  console.log("This always runs");
+  console.log("Finally Block always runs");
 }
 
 // Output:
@@ -56,3 +56,4 @@ try {
     console.error("Unknown Error:", error.message);
   }
 }
+
