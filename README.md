@@ -95,7 +95,7 @@ Vishal Bhingarde
 
 If you find this repository helpful:
 
-Give it a ⭐ on GitHub
+Give it a ⭐ on GitHub and Follow Me 
 
 Fork it and add your own examples
 
