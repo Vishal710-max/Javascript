@@ -8,8 +8,9 @@
 // Example:
 const colors = ["Orange","Red","Black"];
 console.log(colors[0]); // "Orange"
-console.log(colors[2]); // "Blue"
+console.log(colors[2]); // "Black"
 console.log(colors[5]); // undefined (no index 5)
+
 
 
 
