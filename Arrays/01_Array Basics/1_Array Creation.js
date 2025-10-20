@@ -13,12 +13,13 @@ const fruits = ["Apple", "Mango", "Orange"];
 
 
 // B) Using new Array() Constructor
-const numbers = new Array(11, 22, 33);
+const numbers = new Array(1, 2, 3);
 
 // C) Creating an Empty Array
 const emptyArray = [];
 // or
 const anotherEmptyArray = new Array();
+
 
 
 
