@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body style="background-color: #2f2f2f; color: white;">
+    
+    <h1>This is initial</h1>
+    <button class="start">Start</button>
+    <br><br>
+    <button class="stop">Stop</button>
+
+    <script>
+        let start = document.querySelector(".start")
+        let stop = document.querySelector(".stop")
+        let h1 = document.querySelector("h1")
+
+        let setTimeRef;
+        start.addEventListener("click", () => {
+            setTimeRef = setTimeout(() => {    // setTimeout reference stored in setTimeRef var to stop if needed
+                h1.textContent = "Changed after 4s"
+                console.log("Text changed after 4s")
+            }, 4000)
+        })
+
+        stop.addEventListener("click", () => {
+            clearTimeout(setTimeRef);   // this is used to clear the time out i.e stop the timeout which is running long it required reference of setTimeout
+            // clearTimeout() is a built-in JavaScript function used to cancel a timer that was previously set using setTimeout().
+            console.log("setTimeout stoped")
+        })
+
+    </script>
+</body>
+</html>
