@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body style="background-color: #2f2f2f; color: white;">
+    
+    <h1>This is initial</h1>
+    <button class="start">Start</button>
+    <br><br>
+    <button class="stop">Stop</button>
+
+    <script>
+        let start = document.querySelector(".start")
+        let stop = document.querySelector(".stop")
+        let h1 = document.querySelector("h1")
+
+        let setIntervalRef;
+        start.addEventListener("click", () => {
+            setIntervalRef = setInterval(() => {    // setTimeout reference stored in setTimeRef var to stop if needed
+                // setTimeout() runs a function once after a specified number of milliseconds.
+                // callback: Function to run
+                // delay: Time in milliseconds (1000ms = 1 second)
+                // timeoutID: ID used to cancel it with clearTimeout()
+                console.log("Invoked after every 1s for infinite time")   
+            }, 1000)
+        })
+
+        stop.addEventListener("click", () => {
+            clearInterval(setIntervalRef);
+            // setInterval() runs a function repeatedly at a specified interval until stopped.
+            // callback: Function to run repeatedly
+            // delay: Time between executions (in milliseconds)
+            // intervalID: Used to stop the loop with clearInterval()
+            console.log("setTimeout stoped")
+        })
+
+    </script>
+</body>
+</html>
