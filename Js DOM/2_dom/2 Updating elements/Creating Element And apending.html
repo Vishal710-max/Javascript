@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+</head>
+<body style="background-color: #2f2f2f; color: white;">
+    
+</body>
+<script>
+    const div = document.createElement("div");
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("titel", "Main Heading");
+    div.style.backgroundColor = "green";
+    div.style.padding = "12px";
+
+    // div.innerText = "Hello, This is shreyash";   
+    // How it works it can first access all existing text and replace that text with new one
+    // i.e it can errase all the existing content
+
+    // To avoid we can create text node
+    let addtext = document.createTextNode("Hello, This is shreyash");
+    console.log(addtext);  
+
+    div.appendChild(addtext);   // It can not replace existing value
+
+    document.body.appendChild(div);  // Element added to document
+
+    console.log(div.getAttribute("titel"));   // Main Heading
+
+</script>
+</html>
