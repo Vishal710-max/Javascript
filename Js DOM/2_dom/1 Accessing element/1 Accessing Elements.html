@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="One">
+        <p class="Three">I am Shreyash</p>
+        <p class="Three"> I am Web Developer</p>
+    </div>
+    <div>
+        <h1>Heading 1</h1>
+    </div>
+
+    <script>
+        // 1. getElementById()
+        //  -  Purpose: Selects a single element by its unique ID attribute.
+        //  - Returns: A single element or null if not found.
+
+        // Syntax:
+        //     const element = document.getElementById('elementId');
+
+        let divtag = document.getElementById("One");
+        console.log(divtag);    // Check the output in the console it can div tag (whose id one) and also give all the content inside div tag
+        
+        // Characteristics:
+        //  - Fastest method for element selection 
+        //  - IDs must be unique in the document
+        //  - Only returns one element (the first match if duplicate IDs exist)
+
+
+
+        // 2. getElementsByClassName()
+        //  - Purpose: Selects all elements with a specific class name.
+        //  - Returns: A live HTMLCollection of elements.
+
+        // Syntax:
+        //     const elements = document.getElementsByClassName('className');
+
+        let ByClassName = document.getElementsByClassName("Three");
+        console.log(ByClassName);   // 2 tages See the output in the console window it can give you all the spicified class elements
+
+        // Characteristics:
+        //  - Returns a live collection (updates automatically when DOM changes)
+        //  - Can specify multiple classes separated by spaces
+        //  - Not supported in very old browsers (IE8 and below)
+
+
+
+        // 3. getElementsByTagName()
+        //  - Purpose: Selects all elements with a given tag name.
+        //  - Returns: A live HTMLCollection of elements.
+
+        // Syntax:
+        //       const elements = document.getElementsByTagName('tagName');
+
+        let ByTagName = document.getElementsByTagName("div");
+        console.log(ByTagName);    // 2 tags see output in consol
+
+        // Characteristics:
+        //  - Works with any HTML tag ('div', 'p', 'span', etc.)
+        //  - Also available on element nodes (not just document)
+        //  - Returns a live collection
+
+
+
+        // 4. querySelector()
+        //  - Purpose: Selects the first element that matches a CSS selector. (i.e select css selector id # class . etc)
+        //  - Returns: A single element or null if not found.
+
+        // Syntax:
+        //     const element = document.querySelector('cssSelector');
+
+        let querySelector = document.querySelector("#One");
+        console.log(querySelector);   // See output in console it can provide all content inside tag
+
+        querySelector = document.querySelector("div");
+        console.log(querySelector);   // It can display only one div tag i.e. It only displays First occurence
+
+        querySelector = document.querySelector(".Three");
+        console.log(querySelector);   // It can display 1st occurence
+
+        // Characteristics:
+        //  - Can use any CSS selector (classes, IDs, attributes, pseudo-classes)
+        //  - Returns only the first matching element
+        //  - Not live (static snapshot when called)
+
+
+
+        // 5. querySelectorAll()
+        //  - Purpose: Selects all elements that match a CSS selector.
+        //  - Returns: A static NodeList of elements.
+
+        // Syntax:
+        //     const elements = document.querySelectorAll('cssSelector');
+       
+        let querySelectorAll = document.querySelectorAll("#One");
+        console.log(querySelectorAll);   // See output in console it can provide all content inside tag
+
+        querySelectorAll = document.querySelectorAll("div");
+        console.log(querySelectorAll);   // 2 (because 2 div tags) It can display All the div tag
+
+        querySelectorAll = document.querySelectorAll(".Three");
+        console.log(querySelectorAll);   // 2  (beacuse 2 tags associated with provided classname) It can display All 
+
+        // Get first <a> tag with "data-modal" attribute
+        const modalLink = document.querySelector('a[data-modal]');
+
+        // Get all even rows in a table
+        const evenRows = document.querySelectorAll('table tr:nth-child(even)');
+
+        // Get all required inputs in a form
+        const requiredInputs = document.querySelectorAll('input[required]');
+
+        // Characteristics:
+        // Accepts complex CSS selectors
+        // Returns a static NodeList (doesn't update with DOM changes)
+        // Can use forEach() directly on the result
+        // More versatile than older methods
+
+
+
+        // 6. Special Document Collections
+        // The document object provides quick access to common element types:
+
+        document.forms    // All <form> elements
+        document.images   // All <img> elements
+        document.links    // All <a> elements (with href)
+        document.scripts  // All <script> elements
+        document.styleSheets // All stylesheets
+
+        // Example:
+        // Get all images on page
+           const allImages = document.images;
+           console.log(`Page has ${allImages.length} images`);
+
+        // When to Use Each Method
+        //  - getElementById() - When you need to select one unique element quickly
+        //  - getElementsByClassName() - When you need all elements with a class and want live updates
+        //  - getElementsByTagName() - When you need all elements of a specific type
+        //  - querySelector() - When you need complex CSS selector matching (single element)
+        //  - querySelectorAll() - When you need complex CSS selector matching (multiple elements)
+    </script>
+</body>
+</html>
