@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="One">
+        <p class="Three">
+            I am Shreyash
+        </p>
+        <p class="Three"> I am Web Developer</p>
+    </div>
+    <div>
+        <h1>Heading 1</h1>
+    </div>
+
+    <script>
+        // Modifying HTML Content
+        // = innerHTML Property
+        //  - The innerHTML property allows us to retrieve or replace the HTML content within an element.
+        // Purpose: Gets or sets the HTML content (markup) inside an element.
+        // Characteristics:
+        //  - Can insert HTML tags that will be parsed
+        //  - Security risk if used with untrusted content (XSS vulnerability)
+        //  - Replaces all existing content
+
+        let element = document.getElementById("One");
+        console.log(element);     // See output on console window It can display id containg tag and content of this tag
+
+        let innerHTML = element.innerHTML;
+        console.log(innerHTML);
+        // Output:
+        // <p class="Three">I am Shreyash</p>
+        // <p class="Three"> I am Web Developer</p>
+
+        // element.innerHTML = "<h1>Shreyash</h1>"; 
+        // Here output of the the Html changed see on browser
+        // In this it can erase all the content of the id tag i.e All p tage and insert the content given by using innerHTML
+
+
+
+        // outerHTML
+        //  - The outerHTML property, on the other hand, represents the HTML content of the element itself along with its descendants.
+        //  - It includes the element's start tag, content, and end tag.
+        //  - Purpose: Gets or sets the HTML of an element including itself.
+
+        let element5 = document.querySelectorAll("#One");
+        let outerHTML = element5.outerHTML;
+        console.log(outerHTML);
+        // Output:
+        //  <div id="One">
+        //     <p class="Three">I am Shreyash</p>
+        //     <p class="Three"> I am Web Developer</p>
+        //  </div>
+
+        // element.outerHTML = "<div>Hii</div>";
+
+        // element = document.getElementById("One");   // Here, we get an error because we changed the content we replaced all with div tag
+        //    i.e it can erase content + tag it self
+        // console.log(element.outerHTML);
+
+
+
+        // innerText
+        //  - The innerText property retrieves or sets the text content of the specified element, excluding any HTML tags.
+        //  - It represents only the visible text within the element, without considering its child elements.
+        //  - It works as output of Browsers screen
+
+        // innerText prints text as it appears on screen.
+        // innerText ignores the content with property hidden
+        // Examples is the best way to understand so let's go.
+
+        let element1 = document.getElementById("One");
+
+        console.log(element1);
+
+        let innerText = element1.innerText;
+        console.log(innerText);   // It display the text how appears on browsers screen
+        // Output:
+        // I am Shreyash
+
+        // I am Web Developer
+
+        // element1.innerText = "HIIIIII";   // It erases the all the content of accessed element and add new one
+
+        // Characteristics:
+        // - Respects CSS styling (won't return hidden text)
+        // - Triggers reflow (slower than textContent)
+        // - Not standardized until recently
+
+
+
+        // textContent
+        //  - The textContent property retrieves or sets the text content of the specified element, but unlike innerText,
+        //    it includes all text content, including child elements and their text.
+        //  - The textContent property returns the content as it in the HTML markup. (i.e it returns the text content as written in html)
+        //  - Like innerText, it also ignores the HTML tags. But it doesn't consider styles, so it returns the text even though it's hidden.
+        //  - It works as HTML code
+        
+        let element2 = document.getElementById("One");
+
+        console.log(element2);
+
+        console.log(element2.textContent);
+
+        element2.textContent = "I am Web Developer";
+        // Output:
+
+        //               I am Shreyash
+        //          I am Web Developer  (Output accourding to HTML code add \n see output of innerText it's different)
+
+
+
+    </script>
+</body>
+</html>
