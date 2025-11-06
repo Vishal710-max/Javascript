@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="fdiv" style="background-color: aqua; padding: 2rem;">
+        First Div 
+        <p id="fpara" style="background-color: green; padding: 1rem;">
+            First Para
+        </p>
+        <div id="sdiv" style="background-color: yellow; padding: 1.2rem;">
+            Second div 
+            <p id="spara" style="background-color: orange; padding: 0.8rem;">Second Para</p>
+        </div>
+    </div>
+
+    <script>
+        // style property:
+        //   - The style property is a fundamental part of DOM manipulation that allows you to directly access and modify an element's inline CSS styles using JavaScript.
+
+        // What is the style Property?
+        //    - The style property is a read-write property available on all DOM elements that:
+        //    - Represents the element's inline styles (styles defined in the HTML style attribute)
+        //    - Provides a way to get and set these styles programmatically
+        //    - Returns a CSSStyleDeclaration object containing all possible style properties
+        //    - At one time applies on single css property
+
+        // Example:
+        let seconddiv = document.getElementById("sdiv");
+        console.log(seconddiv);
+
+        console.log(seconddiv.style);   // Displays the styles of the element
+
+        // Change the style 
+        seconddiv.style.backgroundColor = "red";
+
+        // Key Characteristics
+        //   - Inline Styles Only:
+        //        - Only reflects styles set directly on the element via the style attribute
+        //        - Doesn't show styles from external stylesheets or <style> tags
+        //   - CamelCase Property Names:
+        //        - CSS properties with hyphens become camelCase in JavaScript
+        //        - background-color → backgroundColor
+        //        - font-size → fontSize
+        //   - String Values:
+        //        - All values must be strings, including numbers (which need units)
+        //        - Correct: element.style.width = '200px'
+        //        - Incorrect: element.style.width = 200
+        //   - Higher Specificity:
+        //        - Styles set via the style property override other CSS rules (except !important)
+
+
+
+        // cssText property:
+        //   - The cssText property is a useful feature of the CSSStyleDeclaration interface (which is what you access when you use element.style)
+        //      that allows you to get or set multiple CSS styles at once as a single string.
+
+        // What is cssText?
+        //     - cssText is a property that:
+        //     - Represents all inline styles of an element as a single string
+        //     - Lets you read or write multiple style declarations in one operation
+        //     - Follows the same format as the HTML style attribute
+
+        let firstdiv = document.getElementById("fdiv");
+        console.log(firstdiv);
+
+        console.log(firstdiv.style);    // Diplayes the styles of the element fdiv
+
+        console.log(firstdiv.style.cssText)
+
+        firstdiv.style.cssText = `
+                    background-color: pink; 
+                    padding: 2rem; width: 500px
+                `
+
+        // No Pseudo-elements: Can't style ::before or ::after with the style property
+
+        // Key Features
+        //   - Batch Style Assignment:
+        //        - Apply multiple style rules in a single operation
+        //        - More efficient than setting styles individually
+        //   - Overwrites Existing Styles:
+        //        - Setting cssText completely replaces all existing inline styles
+        //        - Any previous inline styles will be removed
+        //   - String Format:
+        //        - Uses standard CSS syntax with semicolons between declarations
+        //        - Property names can be either camelCase or kebab-case
+        //   - Performance Benefit:
+        //        - Better performance than setting styles one-by-one
+        //        - Triggers only one reflow/repaint instead of multiple
+    </script>
+</body>
+</html>
