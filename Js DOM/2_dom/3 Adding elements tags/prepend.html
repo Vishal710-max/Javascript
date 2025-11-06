@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>prepend() Example</title>
+</head>
+<body>
+    <ul id="shopping-list">
+        <li>Milk</li>
+        <li>Bread</li>
+    </ul>
+
+    <div id="container">
+        <p>Existing content</p>
+    </div>
+
+    <script>
+
+        // The prepend() method inserts nodes or strings before the first child of a parent element.
+        // It's the modern counterpart to insertBefore() when you want to add content at the beginning.
+
+        // Syntax:
+        //     parentElement.prepend(...nodesOrStrings);
+        // Accepts multiple nodes or strings
+        // Doesn't return anything (void method)
+        // Added in modern DOM standards (not supported in IE)
+
+        const list = document.getElementById('shopping-list');
+        
+        // Create new list item
+        const newItem = document.createElement('li');
+        newItem.textContent = 'Eggs';
+        
+        // Prepend to the list
+        list.prepend(newItem);
+
+
+
+        // Another Example Inserting multiple elements
+        const container = document.getElementById('container');
+    
+        // Create elements to prepend
+        const header = document.createElement('h1');
+        header.textContent = 'Title';
+        
+        const subheader = document.createElement('h2');
+        subheader.textContent = 'Subtitle';
+        
+        // Prepend multiple elements
+        container.prepend(header, subheader);
+        
+        // Can also prepend text directly
+        container.prepend('Introduction: ');
+
+        // Output like that (for proper see on browser)
+        // Introduction:
+        // Title
+        // Subtitle
+        // Existing content
+    </script>
+</body>
+</html>
