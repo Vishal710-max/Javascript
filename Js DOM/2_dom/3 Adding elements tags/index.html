@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="One">
+        <p class="Three">
+            I am Shreyash
+        </p>
+        <p class="Three"> I am Web Developer</p>
+    </div>
+    <div class="Ten">
+        <h1>Heading 1</h1>
+    </div>
+
+    <script>
+
+        // Creating an element/tag
+        // createElement() Method
+        //  - The document.createElement() method is a fundamental DOM manipulation technique in JavaScript.
+        //  - It allows us to dynamically create HTML elements within the DOM. The method takes a single argument.
+        //  - The single argument should be the tag name of the element to be created, and it returns a reference to the newly created element.
+
+        // Syntax:
+        //      let newElement = document.createElement(tagName);
+
+        // Example:
+    
+        //Creation of a new Element div
+        let newElement1 = document.createElement('div');
+        console.log(newElement1);                          //<div></div>
+
+        //Creation of a new Element paragraph
+        let newElement2 = document.createElement('p');
+        console.log(newElement2);                          //<p></p>
+
+        //Creation of a new Element heading
+        let newElement3 = document.createElement('h1');
+        console.log(newElement3);      //<h1></h1>
+
+    
+        // appendChild() Method 
+        //  - The appendChild() method belongs to the Node interface and is primarily used to 
+        //     add a node to the end of the list of children of a specified parent node.
+
+        // Syntax:
+        //     parentNode.appendChild(node);
+
+        // Example:
+        let divtag = document.querySelector("#One");
+        console.log(divtag);
+
+        let h1tag = document.createElement("h1");
+        console.log(h1tag);
+
+        h1tag.textContent = "I am new Element";
+        // Now new Element is created now we have to append this element to existing content
+
+        // divtag.appendChild(h1tag);
+
+        // The element is add at the end of div tag i.e after 2 paragraphs 
+        // i.e it can insert at the end
+
+
+
+
+        // append()
+        //   - Purpose: Adds nodes or strings after the last child of a parent node.
+        //  = Characteristics:
+        //   - Accepts multiple nodes or strings
+        //   - Doesn't return anything
+        //   - Can add both text and elements
+        //   - Newer API (not supported in IE)
+ 
+        const One = document.querySelector('#One');
+        One.append('Text node', document.createElement('span'));
+
+
+
+
+        // insertAdjacent Methods
+        // insertAdjacentElement():
+        //  - The insertAdjacentElement() method allows us to insert a given element into the DOM relative to a specified target element.
+        //  - It provides precise control over where the new element is inserted, offering four different insertion positions:
+
+        // Positions:
+        //  - 'beforebegin': Insert the element before the targetElement itself.
+        //  - 'afterbegin': Insert the element just inside the targetElement, before its first child.
+        //  - 'beforeend': Insert the element just inside the targetElement, after its last child.
+        //  - 'afterend': Insert the element after the targetElement itself.
+
+       divtag = document.getElementById("One");
+
+       let newh1 = document.createElement("h1");
+       newh1.textContent = "Before Begin";
+
+       divtag.insertAdjacentElement("beforebegin", newh1);
+
+       // See the output in browser it can insert before starting of div tag
+
+
+       newh1 = document.createElement("h1");
+       newh1.textContent = "After Begin";
+       divtag.insertAdjacentElement("afterbegin", newh1);
+
+       // See the output in browser it can insret after start of div tag but before all elements in div tag
+
+
+       newh1 = document.createElement("h1");
+       newh1.textContent = "Before End";
+
+       divtag.insertAdjacentElement("beforeend", newh1);
+
+       // See the output in browser it can insert the element before the end of div tag i.e insert after all content of div tag
+
+
+       newh1 = document.createElement("h1");
+       newh1.textContent = "After End";
+
+       divtag.insertAdjacentElement("afterend", newh1);
+
+       // See the output in browser it can insert the element after the end of the div tag
+
+
+
+
+       // insertAdjacentHTML()
+       //  - Purpose: Parses HTML string and inserts at specified position.
+
+       let divTag2 = document.querySelector(".Ten");
+
+       divTag2.insertAdjacentHTML("beforebegin", "<h1>I am HTML Tag directly inserted in before begin of 2nd div</h1>")
+
+       // See the Output in browser
+       // It can work like insertAdjacentElement But in this we can insert element directly without creation of element
+
+
+       
+       
+       // insertAdjacentText()
+       //  - Purpose: Inserts text at specified position.
+
+       divTag2.insertAdjacentText("Afterend", "I am Text Tag directly inserted in aftre end of 2nd div")
+       divTag2.insertAdjacentText("Afterend", "<h1>I am Text Tag directly inserted in aftre end of 2nd div</h1>")   // No h1 tag poperty shown
+       // See Output in this tags not works it can insert only text on specified position
+
+
+
+    </script>
+</body>
+</html>
