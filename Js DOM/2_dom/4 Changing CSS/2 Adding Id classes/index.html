@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="fdiv" style="background-color: aqua; padding: 2rem;">
+        First Div 
+        <p id="fpara" style="background-color: green; padding: 1rem;">
+            First Para
+        </p>
+        <div id="sdiv" style="background-color: yellow; padding: 1.2rem;">
+            Second div 
+            <p id="spara" style="background-color: orange; padding: 0.8rem;">Second Para</p>
+        </div>
+    </div>
+
+    <script>
+        let firstdiv = document.getElementById("fdiv");
+        console.log(firstdiv);
+
+        console.log(firstdiv.style);    // Diplayes the styles of the element fdiv
+
+        console.log(firstdiv.style.cssText)
+
+        firstdiv.style.cssText = `
+                    background-color: pink; 
+                    padding: 2rem; width: 500px
+                `
+
+        // Adding id to an element
+        //   - IDs are unique identifiers for HTML elements. You can add or modify them using JavaScript:
+
+        //  - Methods to Add/Change IDs:
+        //  1) Using the id property:
+                const element = document.querySelector('#fdiv');
+                element.id = 'FirstDiv';    // It can Sets or changes the ID
+
+        //   2) Using setAttribute():
+        //      - This method set and Attribute to an perticular element (Sets id's or the classes)
+        //      - It can Override the existing value
+                const element1 = document.querySelector("#sdiv");
+                element1.setAttribute("id", "SecondDiv");  // It can also sets or changes the ID
+
+        // Using setAttribute() method we can also set styles
+                element1.setAttribute("style", "color: red; background-color: hotpink")  // It can able to change multiple style properties
+                // It can override all the existing values and set newValues
+    
+
+        // Important Notes About IDs:
+        //   - Must be unique in the document
+        //   - Cannot contain spaces
+        //   - Case-sensitive
+        //   - Should begin with a letter (not a number or symbol)
+
+
+
+
+        // Adding Classes to Elements
+        //   - Classes allow you to group elements and apply styles or behaviors to multiple elements.
+
+        // - Methods to Add Classes:
+        //     1) Using classList.add() (modern approach):
+                    element.classList.add('new-class');
+                    element.classList.add('class-one', 'class-two', 'class-three'); // Multiple classes
+
+
+        //     2) Using className property:
+                    // element.className = 'new-class'; // Replaces all existing classes
+                    // element.className += ' new-class'; // Adds to existing classes (note the space)
+
+        //     3) Using setAttribute():
+                    // element.setAttribute('class', 'new-class another-class');    // Replaces all classes (Also adds multiple values)
+                    
+        //     4) classList.remove():
+        //           - It can removes the class from the perticular element
+                        element.classList.remove('class-one', 'class-two');   // Removes the classes form the element (Also it can remove single class from the element)
+
+        //     5) classList.toggele():
+        //           - In this if given class is present then it can remove that class and if given class is not present then it can add that class
+                        
+                        element.classList.toggle('class-three');  // In that case it can remove that class because this class is present
+
+                        // element.classList.toggle('class-three');  // In that case it can add that class because this class is not present
+
+        //     6) contains():
+        //            - Check the perticular class is present or not If presnt then return true and if not present the retun false
+                      console.log(element.classList.contains('new-class'))  // true
+                      console.log(element.classList.contains('class'));   // false
+
+        
+        
+        // .className:
+        //    - Provides the class names   
+                    console.log(element.className)   // Diplayes all the class names of the spcified element
+
+        // .classlist:
+        //    - Provides the array of the classNames i.e gives array format of all the class names of the element
+                    console.log(element.classList);  // Gives the list of class 
+
+
+
+        let ele1 = document.getElementsByClassName("new-class");
+        console.log(ele1);
+        // console.log(ele1.style.cssText);
+
+        
+
+            
+    </script>
+</body>
+</html>
