@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>insertBefore Example</title>
+</head>
+<body>
+    <ul id="fruit-list">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li id="orange">Orange</li>
+        <li>Mango</li>
+    </ul>
+   
+    <ul id="task-list">
+       <li>Buy milk</li>
+       <li>Walk dog</li>
+    </ul>
+
+    <script>
+
+
+        // The insertBefore() method allows you to insert a new node before a specified reference node as a child of a given parent node.
+        
+        // Syntax:
+        //    parentNode.insertBefore(newNode, referenceNode);
+
+        // parentNode: The parent of the reference node
+        // newNode: The node to insert
+        // referenceNode: The node before which newNode is inserted
+        // Returns: The inserted node
+
+        const list = document.getElementById('fruit-list');
+        const referenceItem = document.getElementById('orange');
+        const newItem = document.createElement('li');
+        
+        newItem.textContent = 'Grapes';
+        list.insertBefore(newItem, referenceItem);
+
+
+        // Output
+        // Apple
+        // Banana
+        // Grapes
+        // Orange
+        // Mango
+
+        // Another example insert After
+          const tasks = document.getElementById('task-list');
+          const newTask = document.createElement('li');
+          newTask.textContent = 'Pay bills';
+            
+          // Insert at end when referenceNode is null
+          tasks.insertBefore(newTask, null);
+
+        //  Output
+        // Buy milk
+        // Walk dog
+        // Pay bills
+
+    </script>
+</body>
+</html>
